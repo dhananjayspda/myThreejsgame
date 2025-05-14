@@ -33,3 +33,8 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+//texture bg
+const loader = new THREE.TextureLoader();
+const texture = loader.load('textures/tomcat.jpg');
+scene.background = texture;
